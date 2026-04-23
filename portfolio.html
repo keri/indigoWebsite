@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Artist Name</title>
+  <meta name="description" content="Portfolio of paintings, sculpture, and works on paper.">
+  <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="nav scrolled" id="site-nav" role="banner"></header>
+  <nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation"></nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>Portfolio</h1>
+    <p>A selection of works across mediums and series.</p>
+  </div>
+
+  <!-- FILTER TABS -->
+  <div class="portfolio-filters" id="portfolio-filters" role="tablist" aria-label="Filter by medium">
+    <!-- Injected by portfolio.js -->
+  </div>
+
+  <!-- PORTFOLIO MASONRY GRID -->
+  <main>
+    <div class="portfolio-grid" id="portfolio-grid" role="list" aria-label="Portfolio works">
+      <!-- Items injected by portfolio.js -->
+    </div>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="portfolio-lightbox" role="dialog" aria-modal="true" aria-label="Artwork lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Previous artwork">&#8592;</button>
+      <img class="lightbox-img" src="" alt="" style="opacity:1">
+      <button class="lightbox-nav lightbox-next" aria-label="Next artwork">&#8594;</button>
+      <div class="lightbox-caption">
+        <h3 class="lightbox-title"></h3>
+        <p class="lightbox-meta"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" id="site-footer" role="contentinfo"></footer>
+
+  <script src="js/nav.js"></script>
+  <script src="data/portfolio.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

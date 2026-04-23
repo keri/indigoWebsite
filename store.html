@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store — Artist Name</title>
+  <meta name="description" content="Original artworks available for purchase. Oil paintings, works on paper, and sculpture.">
+  <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="nav scrolled" id="site-nav" role="banner"></header>
+  <nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation"></nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>Store</h1>
+    <p>Original works available for purchase. Each piece is unique and ships from the studio.</p>
+  </div>
+
+  <!-- STORE GRID — populated by js/store.js -->
+  <main>
+    <div class="store-grid" id="store-grid" role="list" aria-label="Available artworks">
+      <!-- Cards injected by store.js -->
+    </div>
+  </main>
+
+  <!-- ARTWORK DETAIL MODAL -->
+  <div class="store-modal" id="store-modal" role="dialog" aria-modal="true" aria-label="Artwork detail">
+    <div class="store-modal-inner">
+      <div class="store-modal-image">
+        <img src="" alt="" loading="lazy">
+      </div>
+      <div class="store-modal-body">
+        <button class="store-modal-close" aria-label="Close">&times;</button>
+        <h2 class="store-modal-title"></h2>
+        <p class="store-modal-meta"></p>
+        <p class="store-modal-desc"></p>
+        <p class="store-modal-price"></p>
+        <button class="btn store-modal-action">Purchase Inquiry</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" id="site-footer" role="contentinfo"></footer>
+
+  <script src="js/nav.js"></script>
+  <script src="data/store.js"></script>
+  <script src="js/store.js"></script>
+</body>
+</html>

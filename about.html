@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Artist Name</title>
+  <meta name="description" content="About the artist — biography, statement, and exhibition history.">
+  <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="nav scrolled" id="site-nav" role="banner"></header>
+  <nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation"></nav>
+
+  <div class="page-header">
+    <h1>About</h1>
+    <p>Biography &amp; statement.</p>
+  </div>
+
+  <main class="about-layout">
+
+    <!-- PORTRAIT -->
+    <div class="about-image">
+      <img src="media/artist-portrait.jpg"
+           alt="Portrait of Artist Name"
+           onerror="this.parentElement.style.background='#181818'; this.style.display='none'">
+    </div>
+
+    <!-- TEXT -->
+    <div class="about-content">
+      <h2>Artist Name</h2>
+      <p class="about-sub">Painter &amp; Sculptor &nbsp;·&nbsp; [City, State]</p>
+
+      <p>
+        [Artist Name] is a painter and sculptor working from a studio in [City, State].
+        Their practice is grounded in the physical encounter between material and mark —
+        built-up surfaces of oil and wax are abraded, sanded, and repainted until the
+        image arrives less through intention than excavation.
+      </p>
+
+      <p>
+        Recurring concerns include the geology of memory, the phenomenology of landscape,
+        and the ethics of erasure. Works range from intimate panels to large-scale canvases,
+        and occasionally extend into three dimensions through cast and assembled sculpture.
+      </p>
+
+      <p>
+        Before returning to studio practice full-time, [Artist Name] studied at [Institution]
+        and spent several years working in [field/region], an experience that continues to
+        inform both subject matter and working method.
+      </p>
+
+      <div class="about-rule"></div>
+
+      <!-- ARTIST STATEMENT -->
+      <h3 style="font-family: var(--serif); font-size: 1.1rem; font-weight: 400; margin-bottom: 12px; letter-spacing: 0.06em;">
+        Artist Statement
+      </h3>
+      <p>
+        "I am interested in what a surface can hold — not as representation but as record.
+        The paintings begin in accumulation and end in loss: layers applied and then destroyed,
+        the image appearing in the gap between what was put down and what was taken away.
+        I am not trying to picture the landscape so much as to use its logic — erosion,
+        deposition, the slow weight of time on matter."
+      </p>
+
+      <div class="about-rule"></div>
+
+      <!-- QUICK FACTS -->
+      <div class="about-facts">
+        <div>
+          <p class="about-fact-label">Based</p>
+          <p class="about-fact-value">[City, State]</p>
+        </div>
+        <div>
+          <p class="about-fact-label">Primary Mediums</p>
+          <p class="about-fact-value">Oil, Encaustic, Sculpture</p>
+        </div>
+        <div>
+          <p class="about-fact-label">Education</p>
+          <p class="about-fact-value">[Institution], [Year]</p>
+        </div>
+        <div>
+          <p class="about-fact-label">Represented</p>
+          <p class="about-fact-value">Independent / Studio</p>
+        </div>
+      </div>
+
+      <div class="about-rule"></div>
+
+      <!-- EXHIBITIONS -->
+      <h3 style="font-family: var(--serif); font-size: 1.1rem; font-weight: 400; margin-bottom: 20px; letter-spacing: 0.06em;">
+        Selected Exhibitions
+      </h3>
+      <ul style="display: flex; flex-direction: column; gap: 14px;">
+        <li style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--border); padding-bottom: 12px;">
+          <span style="font-size: 0.88rem;">[Exhibition Title] — [Gallery Name, City]</span>
+          <span style="font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.08em; flex-shrink:0; margin-left:16px;">2024</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--border); padding-bottom: 12px;">
+          <span style="font-size: 0.88rem;">[Exhibition Title] — [Gallery Name, City]</span>
+          <span style="font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.08em; flex-shrink:0; margin-left:16px;">2023</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--border); padding-bottom: 12px;">
+          <span style="font-size: 0.88rem;">[Exhibition Title] — [Group Show, Venue]</span>
+          <span style="font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.08em; flex-shrink:0; margin-left:16px;">2022</span>
+        </li>
+        <li style="display: flex; justify-content: space-between; align-items: baseline;">
+          <span style="font-size: 0.88rem;">[Exhibition Title] — [Gallery Name, City]</span>
+          <span style="font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.08em; flex-shrink:0; margin-left:16px;">2021</span>
+        </li>
+      </ul>
+
+      <div style="margin-top: 40px;">
+        <a href="contact.html" class="btn">Get in Touch</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer" id="site-footer" role="contentinfo"></footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
