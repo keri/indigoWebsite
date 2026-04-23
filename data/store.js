@@ -18,27 +18,27 @@
 const storeItems = [
   {
     id: "s01",
-    title: "Tidal Memory",
-    medium: "Oil on linen",
+    title: "Immersion of Flowers into an abstract landscape",
+    medium: "Acrylic on Canvas",
     dimensions: '36" × 48"',
     year: 2024,
     price: 3800,
     sold: false,
     inquiry: false,
-    description: "Layers of translucent glaze build a coastal horizon half-remembered, half-invented — blues drifting into the warmth of aged umber.",
-    image: "media/store/tidal-memory.jpg"
+    description: "Layers of colors blend into a vibrant landscape that blends flowers into an abstract journey for the viewer",
+    image: "media/painting1.png"
   },
   {
     id: "s02",
-    title: "Interval I",
+    title: "The interplay of the science and nature",
     medium: "Acrylic & graphite on panel",
     dimensions: '18" × 24"',
     year: 2024,
     price: 1650,
     sold: false,
     inquiry: false,
-    description: "A study in silence: geometric planes interrupted by a single gestural mark, exploring the tension between order and instinct.",
-    image: "media/store/interval-i.jpg"
+    description: "A study in the immersion of microscopic elements of science and the beauty of nature: the flow between micro- and macro- elements in nature offers a new perspective with every viewing.",
+    image: "media/painting2.png"
   },
   {
     id: "s03",
@@ -50,7 +50,7 @@ const storeItems = [
     sold: false,
     inquiry: true,
     description: "A large-scale meditation on family and landscape, combining photographic memory with abstract gesture. Inquiry for pricing.",
-    image: "media/store/inheritance.jpg"
+    image: "media/painting-1.png"
   },
   {
     id: "s04",
@@ -62,7 +62,7 @@ const storeItems = [
     sold: true,
     inquiry: false,
     description: "Monotype, collage, and oil stick create a record of a single evening's light — documentary and elegy at once.",
-    image: "media/store/dusk-archive.jpg"
+    image: "media/painting-2.png"
   },
   {
     id: "s05",

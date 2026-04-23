@@ -32,7 +32,7 @@ const portfolioItems = [
     year: 2024,
     dimensions: '24" × 36"',
     description: "Oil on linen — geological strata rendered in warm ochre and raw sienna.",
-    image: "media/portfolio/erosion-study-3.jpg"
+    image: "media/painting1.png"
   },
   {
     id: "p02",
@@ -41,7 +41,7 @@ const portfolioItems = [
     year: 2023,
     dimensions: '48" × 48"',
     description: "Large-scale acrylic exploration of chromatic depth and spatial ambiguity.",
-    image: "media/portfolio/blue-ground.jpg"
+    image: "media/painting2.png"
   },
   {
     id: "p03",
@@ -50,7 +50,7 @@ const portfolioItems = [
     year: 2024,
     dimensions: '30" × 22"',
     description: "Map fragments, encaustic, and oil pastel on paper. Part of an ongoing archive series.",
-    image: "media/portfolio/cartography.jpg"
+    image: "media/painting-1.png"
   },
   {
     id: "p04",
@@ -59,7 +59,7 @@ const portfolioItems = [
     year: 2022,
     dimensions: '18" × 24"',
     description: "Ink wash and graphite. First in a series exploring repetition and musical structure.",
-    image: "media/portfolio/fugue-state-i.jpg"
+    image: "media/painting-2.png"
   },
   {
     id: "p05",

@@ -31,7 +31,7 @@
     .join("");
 
   // Determine artist name (update once you have a name)
-  const ARTIST_NAME = "Artist Name";
+  const ARTIST_NAME = "Indigo Multerer";
   const YEAR = new Date().getFullYear();
 
   // Inject nav

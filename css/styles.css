@@ -179,7 +179,7 @@ h1, h2, h3, h4 {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('../media/hero.jpg');
+  background-image: url('../media/hero.png');
   background-size: cover;
   background-position: center;
   transform: scale(1.05);
