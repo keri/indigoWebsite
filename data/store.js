@@ -26,7 +26,7 @@ const storeItems = [
     sold: false,
     inquiry: false,
     description: "Layers of colors blend into a vibrant landscape that blends flowers into an abstract journey for the viewer",
-    image: "media/painting1.png"
+    image: "media/painting3.png"
   },
   {
     id: "s02",
