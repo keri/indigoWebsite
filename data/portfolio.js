@@ -1,6 +1,6 @@
 /**
  * PORTFOLIO ITEMS
- * Images should live in media/portfolio/
+ * Images should live in media/
  * Use the "medium" field (matching mediumFilters below) to enable filtering.
  *
  * Fields:
@@ -10,7 +10,7 @@
  *   year      — year created
  *   dimensions— display string
  *   description — short caption shown on hover and in lightbox
- *   image     — path from site root, e.g. "media/portfolio/work-01.jpg"
+ *   image     — path from site root, e.g. "media/work-01.jpg"
  *   thumb     — optional separate thumbnail; if omitted, image is used
  */
 

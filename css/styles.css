@@ -327,7 +327,7 @@ h1, h2, h3, h4 {
 .featured-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2px;
+  gap: 10px;
   max-width: 1100px;
   margin: 0 auto 64px;
 }
@@ -360,7 +360,7 @@ h1, h2, h3, h4 {
   transition: opacity 0.4s;
   display: flex;
   align-items: flex-end;
-  padding: 28px;
+  padding: 10px;
 }
 
 .featured-item:hover .featured-item-overlay { opacity: 1; }
@@ -411,7 +411,7 @@ h1, h2, h3, h4 {
 .store-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px 28px;
+  gap: 50px 50px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 48px 96px;
@@ -427,7 +427,7 @@ h1, h2, h3, h4 {
   position: relative;
   overflow: hidden;
   aspect-ratio: 3/4;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   background: var(--bg-card);
 }
 
@@ -468,7 +468,7 @@ h1, h2, h3, h4 {
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   color: var(--text-muted);
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   text-transform: uppercase;
 }
 
@@ -476,7 +476,7 @@ h1, h2, h3, h4 {
   font-size: 0.82rem;
   color: var(--text-muted);
   line-height: 1.65;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   flex: 1;
 }
 
@@ -485,7 +485,7 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: space-between;
   margin-top: auto;
-  padding-top: 14px;
+  padding-top: 10px;
   border-top: 1px solid var(--border);
 }
 
@@ -643,7 +643,7 @@ h1, h2, h3, h4 {
 
 .portfolio-grid {
   columns: 4;
-  column-gap: 6px;
+  column-gap: 50px;
   padding: 0 48px 96px;
   max-width: 1400px;
   margin: 0 auto;
@@ -651,7 +651,7 @@ h1, h2, h3, h4 {
 
 .portfolio-item {
   break-inside: avoid;
-  margin-bottom: 6px;
+  margin-bottom: 50px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -680,8 +680,8 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
-  gap: 6px;
+  padding: 30px;
+  gap: 10px;
 }
 
 .portfolio-item:hover .portfolio-item-overlay { opacity: 1; }
