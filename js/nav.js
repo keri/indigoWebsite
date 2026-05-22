@@ -12,13 +12,18 @@
     { href: "contact.html",   label: "Contact" },
   ];
 
+  const leftPages = [
+    { href: "contact.html",   label: "Contact" },
+    { href: "about.html",     label: "About" },
+    { href: "store.html",     label: "Store" },
+  ];
+
   const current = location.pathname.split("/").pop() || "index.html";
 
-  // Build nav links
-  const linksHTML = pages
+  // Build nav links (left: contact, about, store only)
+  const linksHTML = leftPages
     .map(p => {
-      const active = current === p.href || (current === "" && p.href === "index.html")
-        ? ' class="active"' : '';
+      const active = current === p.href ? ' class="active"' : '';
       return `<a href="${p.href}"${active}>${p.label}</a>`;
     })
     .join("");
@@ -38,13 +43,18 @@
   const navEl = document.getElementById("site-nav");
   if (navEl) {
     navEl.innerHTML = `
-      <a class="nav-logo" href="index.html">${ARTIST_NAME}</a>
       <nav class="nav-links" aria-label="Main navigation">
         ${linksHTML}
       </nav>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <a class="nav-logo" href="index.html">
+        <img src="media/logo.svg" alt="${ARTIST_NAME} logo">
+        <span class="nav-logo-name">${ARTIST_NAME}</span>
+      </a>
+      <div class="nav-right">
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     `;
   }
 
