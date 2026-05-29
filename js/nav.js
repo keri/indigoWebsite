@@ -71,7 +71,7 @@
       <span class="footer-logo">${ARTIST_NAME}</span>
       <span class="footer-copy">&copy; ${YEAR}. All rights reserved.</span>
       <div class="footer-social">
-        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="https://www.instagram.com/indisartbook" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
         <a href="#" aria-label="Artsy">Artsy</a>
         <a href="contact.html">Contact</a>
       </div>
