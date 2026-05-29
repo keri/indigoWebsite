@@ -499,6 +499,48 @@ h1, h2, h3, h4 {
   cursor: not-allowed;
 }
 
+.btn-buy {
+  display: block;
+  width: 100%;
+  padding: 11px 22px;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid var(--accent);
+  color: var(--bg);
+  background: var(--accent);
+  font-family: var(--sans);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  text-decoration: none;
+}
+.btn-buy:hover {
+  background: #d4b478;
+  border-color: #d4b478;
+}
+
+.btn-buy-methods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.pay-icon {
+  height: 14px;
+  width: auto;
+  vertical-align: middle;
+  opacity: 0.6;
+}
+.pay-divider {
+  opacity: 0.4;
+}
+
 .store-card-price {
   font-family: var(--serif);
   font-size: 1.3rem;

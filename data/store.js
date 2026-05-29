@@ -3,16 +3,19 @@
  * Add or remove items here. Images should live in media/store/
  *
  * Fields:
- *   id        — unique identifier (string)
- *   title     — artwork title
- *   medium    — e.g. "Oil on canvas"
- *   dimensions— e.g. '24" × 36"'
- *   year      — year created
- *   price     — number (USD), or null if inquiry-only
- *   sold      — true / false
- *   inquiry   — true if price is hidden; contact for pricing
+ *   id          — unique identifier (string)
+ *   title       — artwork title
+ *   medium      — e.g. "Oil on canvas"
+ *   dimensions  — e.g. '24" × 36"'
+ *   year        — year created
+ *   price       — number (USD), or null if inquiry-only
+ *   sold        — true / false
+ *   inquiry     — true if price is hidden; contact for pricing
  *   description — short paragraph
- *   image     — path relative to site root, e.g. "media/store/piece-01.jpg"
+ *   image       — path relative to site root, e.g. "media/store/piece-01.jpg"
+ *   paymentLink — Stripe Payment Link URL for this item (supports Apple Pay,
+ *                 Google Pay, and card). Create at dashboard.stripe.com →
+ *                 Payment Links. Set to null to show contact button instead.
  */
 
 const storeItems = [
@@ -26,7 +29,8 @@ const storeItems = [
     sold: false,
     inquiry: false,
     description: "Layers of colors blend into a vibrant landscape that blends flowers into an abstract journey for the viewer",
-    image: "media/painting3.png"
+    image: "media/painting3.png",
+    paymentLink: null
   },
   {
     id: "s02",
@@ -38,7 +42,8 @@ const storeItems = [
     sold: false,
     inquiry: false,
     description: "A study in the immersion of microscopic elements of science and the beauty of nature: the flow between micro- and macro- elements in nature offers a new perspective with every viewing.",
-    image: "media/painting2.png"
+    image: "media/painting2.png",
+    paymentLink: null
   },
   {
     id: "s03",
@@ -50,7 +55,8 @@ const storeItems = [
     sold: false,
     inquiry: true,
     description: "A large-scale meditation on family and landscape, combining photographic memory with abstract gesture. Inquiry for pricing.",
-    image: "media/painting-1.png"
+    image: "media/painting-1.png",
+    paymentLink: null
   },
   {
     id: "s04",
@@ -62,7 +68,8 @@ const storeItems = [
     sold: true,
     inquiry: false,
     description: "Monotype, collage, and oil stick create a record of a single evening's light — documentary and elegy at once.",
-    image: "media/painting-2.png"
+    image: "media/painting-2.png",
+    paymentLink: null
   },
   {
     id: "s05",
@@ -74,7 +81,8 @@ const storeItems = [
     sold: false,
     inquiry: false,
     description: "Beeswax and pigment fused with heat, capturing the crystalline flatness of desert evaporation in miniature.",
-    image: "media/store/salt-plane.jpg"
+    image: "media/store/salt-plane.jpg",
+    paymentLink: null
   },
   {
     id: "s06",
@@ -86,6 +94,7 @@ const storeItems = [
     sold: false,
     inquiry: false,
     description: "A figurative work emerging from abstraction — the suggestion of a face in a field of charcoal grey and unworked linen.",
-    image: "media/store/pale-witness.jpg"
+    image: "media/store/pale-witness.jpg",
+    paymentLink: null
   }
 ];
