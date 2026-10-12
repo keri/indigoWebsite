@@ -43,7 +43,7 @@
       <div class="store-card-body">
         <h2 class="store-card-title">${item.title}</h2>
         <p class="store-card-medium">${item.medium} &nbsp;·&nbsp; ${item.dimensions} &nbsp;·&nbsp; ${item.year}</p>
-        <p class="store-card-desc">${item.description}</p>
+        ${item.description ? `<p class="store-card-desc">${item.description}</p>` : ''}
         <div class="store-card-footer">
           ${formatPrice(item)}
           ${formatActions(item)}
