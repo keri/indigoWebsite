@@ -76,7 +76,7 @@ const storeItems = [
     price: 680,
     sold: false,
     inquiry: false,
-    image: "media/web.jpg",
+    image: "media/web.png",
     paymentLink: null
   },
   {
@@ -88,7 +88,7 @@ const storeItems = [
     price: 2400,
     sold: false,
     inquiry: false,
-    image: "media/portal.jpg",
+    image: "media/portal.png",
     paymentLink: null
   },
   {
@@ -100,7 +100,7 @@ const storeItems = [
     price: 2400,
     sold: false,
     inquiry: false,
-    image: "media/garden.jpg",
+    image: "media/garden.png",
     paymentLink: null
   },
   {
@@ -112,7 +112,7 @@ const storeItems = [
     price: 2400,
     sold: false,
     inquiry: false,
-    image: "media/anemoneFlowers.jpg",
+    image: "media/anemoneFlowers.png",
     paymentLink: null
   },
   {
@@ -124,7 +124,7 @@ const storeItems = [
     price: 2400,
     sold: false,
     inquiry: false,
-    image: "media/roses.jpg",
+    image: "media/roses.png",
     paymentLink: null
   },
   {
@@ -136,7 +136,7 @@ const storeItems = [
     price: 2400,
     sold: false,
     inquiry: false,
-    image: "media/iris.jpg",
+    image: "media/iris.png",
     paymentLink: null
   },
   {
@@ -148,7 +148,7 @@ const storeItems = [
     price: 2400,
     sold: false,
     inquiry: false,
-    image: "media/store/thePrairie.jpg",
+    image: "media/thePrairie.png",
     paymentLink: null
   },
   {
@@ -160,7 +160,7 @@ const storeItems = [
     price: 2400,
     sold: false,
     inquiry: false,
-    image: "media/orchid.jpg",
+    image: "media/orchid.png",
     paymentLink: null
   }
 ];
