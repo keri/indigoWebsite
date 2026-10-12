@@ -573,8 +573,8 @@ h1, h2, h3, h4 {
   cursor: not-allowed;
 }
 
-/* Store modal / lightbox */
-.store-modal {
+/* Store lightbox */
+.store-lightbox {
   display: none;
   position: fixed;
   inset: 0;
@@ -582,83 +582,45 @@ h1, h2, h3, h4 {
   background: rgba(12,12,12,0.94);
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 24px;
   backdrop-filter: blur(8px);
 }
-.store-modal.open { display: flex; }
+.store-lightbox.open { display: flex; }
 
-.store-modal-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  max-width: 900px;
-  width: 100%;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  max-height: 90vh;
-  overflow: hidden;
+.store-lightbox-img {
+  max-width: min(90vw, 1000px);
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
-.store-modal-image {
-  position: relative;
-  aspect-ratio: 3/4;
-  overflow: hidden;
-}
-.store-modal-image img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-}
-
-.store-modal-body {
-  padding: 48px 40px;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
+.store-lightbox-caption {
+  margin-top: 16px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: center;
 }
 
-.store-modal-close {
-  position: absolute;
-  top: 20px; right: 20px;
-  z-index: 10;
+.store-lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 24px;
   background: none;
   border: none;
   color: var(--text);
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   line-height: 1;
   opacity: 0.6;
   transition: opacity 0.2s;
+  z-index: 201;
 }
-.store-modal-close:hover { opacity: 1; }
-
-.store-modal-title {
-  font-size: 1.8rem;
-  font-weight: 300;
-  margin-bottom: 8px;
-}
-
-.store-modal-meta {
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 24px;
-}
-
-.store-modal-desc {
-  font-size: 0.88rem;
-  line-height: 1.75;
-  color: rgba(232,228,220,0.75);
-  margin-bottom: 32px;
-  flex: 1;
-}
-
-.store-modal-price {
-  font-family: var(--serif);
-  font-size: 2rem;
-  font-weight: 300;
-  margin-bottom: 20px;
-}
+.store-lightbox-close:hover { opacity: 1; }
 
 /* =========================================================
    PORTFOLIO PAGE
