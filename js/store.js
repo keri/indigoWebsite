@@ -37,6 +37,8 @@
         <img src="${item.image}"
              alt="${item.title}"
              loading="lazy"
+             data-lightbox="${item.image}"
+             data-title="${item.title}"
              onerror="this.parentElement.style.background='#222'; this.style.display='none'">
         ${item.sold ? '<span class="store-card-badge sold">Sold</span>' : ''}
       </div>
@@ -51,4 +53,41 @@
       </div>
     </article>
   `).join("");
+
+  // Lightbox
+  const lb = document.createElement("div");
+  lb.className = "store-lightbox";
+  lb.setAttribute("role", "dialog");
+  lb.setAttribute("aria-modal", "true");
+  lb.innerHTML = `
+    <button class="store-lightbox-close" aria-label="Close">&times;</button>
+    <img class="store-lightbox-img" src="" alt="">
+    <p class="store-lightbox-caption"></p>
+  `;
+  document.body.appendChild(lb);
+
+  const lbImg = lb.querySelector(".store-lightbox-img");
+  const lbCaption = lb.querySelector(".store-lightbox-caption");
+
+  function openLightbox(src, title) {
+    lbImg.src = src;
+    lbImg.alt = title;
+    lbCaption.textContent = title;
+    lb.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    lb.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
+  grid.addEventListener("click", e => {
+    const img = e.target.closest("[data-lightbox]");
+    if (img) openLightbox(img.dataset.lightbox, img.dataset.title);
+  });
+
+  lb.querySelector(".store-lightbox-close").addEventListener("click", closeLightbox);
+  lb.addEventListener("click", e => { if (e.target === lb) closeLightbox(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeLightbox(); });
 })();
