@@ -1,100 +1,166 @@
 /**
  * STORE ITEMS
- * Add or remove items here. Images should live in media/store/
+ * Add or remove items here. Images should live in media/
  *
  * Fields:
  *   id          — unique identifier (string)
  *   title       — artwork title
  *   medium      — e.g. "Oil on canvas"
- *   dimensions  — e.g. '24" × 36"'
+ *   dimensions  — e.g. '120 cm × 85 cm'
  *   year        — year created
- *   price       — number (USD), or null if inquiry-only
+ *   price       — number (NZD), or null if inquiry-only
  *   sold        — true / false
  *   inquiry     — true if price is hidden; contact for pricing
- *   description — short paragraph
- *   image       — path relative to site root, e.g. "media/store/piece-01.jpg"
- *   paymentLink — Stripe Payment Link URL for this item (supports Apple Pay,
- *                 Google Pay, and card). Create at dashboard.stripe.com →
- *                 Payment Links. Set to null to show contact button instead.
+ *   description — short paragraph (optional)
+ *   image       — path relative to site root, e.g. "media/horseshoe.png"
+ *   paymentLink — Stripe Payment Link URL (supports Apple Pay, Google Pay,
+ *                 and card). Create at dashboard.stripe.com → Payment Links.
+ *                 Set to null to show contact button instead.
  */
 
 const storeItems = [
   {
-    id: "s01",
-    title: "Immersion of Flowers into an abstract landscape",
-    medium: "Acrylic on Canvas",
-    dimensions: '36" × 48"',
-    year: 2024,
+    id: "s02",
+    title: "Horseshoe",
+    medium: "Acrylic on canvas",
+    dimensions: '120 cm × 85 cm',
+    year: 2025,
     price: 3800,
     sold: false,
     inquiry: false,
-    description: "Layers of colors blend into a vibrant landscape that blends flowers into an abstract journey for the viewer",
-    image: "media/painting3.png",
+    image: "media/horseshoe.png",
     paymentLink: null
   },
   {
-    id: "s02",
-    title: "The interplay of the science and nature",
-    medium: "Acrylic & graphite on panel",
-    dimensions: '18" × 24"',
-    year: 2024,
+    id: "s01",
+    title: "The Crab",
+    medium: "Acrylic on canvas",
+    dimensions: '120 cm × 135 cm',
+    year: 2022,
     price: 1650,
     sold: false,
     inquiry: false,
-    description: "A study in the immersion of microscopic elements of science and the beauty of nature: the flow between micro- and macro- elements in nature offers a new perspective with every viewing.",
-    image: "media/painting2.png",
+    image: "media/crab.png",
     paymentLink: null
   },
   {
     id: "s03",
-    title: "Inheritance",
-    medium: "Oil on canvas",
-    dimensions: '48" × 60"',
-    year: 2023,
+    title: "Lagoon",
+    medium: "Acrylic on canvas",
+    dimensions: '120 cm × 90 cm',
+    year: 2024,
     price: null,
     sold: false,
     inquiry: true,
-    description: "A large-scale meditation on family and landscape, combining photographic memory with abstract gesture. Inquiry for pricing.",
-    image: "media/painting-1.png",
+    image: "media/lagoon.png",
     paymentLink: null
   },
   {
     id: "s04",
-    title: "Dusk Archive",
-    medium: "Mixed media on paper",
-    dimensions: '22" × 30"',
-    year: 2023,
+    title: "Jackpot",
+    medium: "Acrylic on canvas",
+    dimensions: '120 cm x 60 cm',
+    year: 2025,
     price: 920,
     sold: true,
     inquiry: false,
-    description: "Monotype, collage, and oil stick create a record of a single evening's light — documentary and elegy at once.",
-    image: "media/painting-2.png",
+    image: "media/jackpot.png",
     paymentLink: null
   },
   {
     id: "s05",
-    title: "Salt Plane",
-    medium: "Encaustic on board",
-    dimensions: '12" × 12"',
-    year: 2024,
+    title: "Web",
+    medium: "Oil on canvas",
+    dimensions: '40 cm x 35 cm',
+    year: 2025,
     price: 680,
     sold: false,
     inquiry: false,
-    description: "Beeswax and pigment fused with heat, capturing the crystalline flatness of desert evaporation in miniature.",
-    image: "media/store/salt-plane.jpg",
+    image: "media/web.jpg",
     paymentLink: null
   },
   {
     id: "s06",
-    title: "Pale Witness",
-    medium: "Charcoal & oil on canvas",
-    dimensions: '30" × 40"',
-    year: 2024,
+    title: "Portal",
+    medium: "Oil on canvas",
+    dimensions: '115 cm x 60 cm',
+    year: 2026,
     price: 2400,
     sold: false,
     inquiry: false,
-    description: "A figurative work emerging from abstraction — the suggestion of a face in a field of charcoal grey and unworked linen.",
-    image: "media/store/pale-witness.jpg",
+    image: "media/portal.jpg",
+    paymentLink: null
+  },
+  {
+    id: "s07",
+    title: "Garden",
+    medium: "Oil on canvas",
+    dimensions: '25 cm x 25 cm',
+    year: 2026,
+    price: 2400,
+    sold: false,
+    inquiry: false,
+    image: "media/garden.jpg",
+    paymentLink: null
+  },
+  {
+    id: "s08",
+    title: "Anemone Flowers",
+    medium: "Oil on canvas",
+    dimensions: '31 cm x 25 cm',
+    year: 2026,
+    price: 2400,
+    sold: false,
+    inquiry: false,
+    image: "media/anemoneFlowers.jpg",
+    paymentLink: null
+  },
+  {
+    id: "s09",
+    title: "Roses",
+    medium: "Oil on canvas",
+    dimensions: '45 cm x 35 cm',
+    year: 2026,
+    price: 2400,
+    sold: false,
+    inquiry: false,
+    image: "media/roses.jpg",
+    paymentLink: null
+  },
+  {
+    id: "s10",
+    title: "Iris",
+    medium: "Oil on canvas",
+    dimensions: '40 cm x 25 cm',
+    year: 2026,
+    price: 2400,
+    sold: false,
+    inquiry: false,
+    image: "media/iris.jpg",
+    paymentLink: null
+  },
+  {
+    id: "s11",
+    title: "The Prairie",
+    medium: "Oil on canvas",
+    dimensions: '45 cm x 45 cm',
+    year: 2026,
+    price: 2400,
+    sold: false,
+    inquiry: false,
+    image: "media/store/thePrairie.jpg",
+    paymentLink: null
+  },
+  {
+    id: "s12",
+    title: "Orchid",
+    medium: "Oil on canvas",
+    dimensions: '75 cm x 45 cm',
+    year: 2026,
+    price: 2400,
+    sold: false,
+    inquiry: false,
+    image: "media/orchid.jpg",
     paymentLink: null
   }
 ];
